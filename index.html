@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <input type="text" id="input" placeholder="Enter Degree you want"></input>
+        <button id="btn" onclick="convert();">convert</button>
+        <p id="result">Result:</p>
+    </table>
+
+
+    <script>
+        function convert() {
+            let input = document.getElementById('input').value;
+            if (isNaN(input)) {
+                alert ('please Enter the number!');
+            } else {
+                let result = (9 * input)/5 + 32;
+                document.getElementById('result').innerHTML = "Result: " + result;
+            }
+        }
+    </script>
+</body>
+</html>
