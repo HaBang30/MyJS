@@ -15,6 +15,8 @@
 
 
     <script>
+        // Convert Degree C to Degree F:
+
         // function convert() {
         //     let input = document.getElementById('input').value;
         //     if (isNaN(input)) {
@@ -25,18 +27,25 @@
         //     }
         // }
     
+        // Game guess number:
+
         // let number = parseInt(prompt('Please enter the number you want to guess'));
         // let stringNumbers = Math.floor(Math.random() * 11)
         // // This is random number to created by string of integer number form 0 to 10;
         // if ("number" == "stringNumber") {
         //     alert ('congratulation you guess correct');
         // } else {
-        //     alert ('incorrect but never give up');
+        //     alert ('incorrect please try again');
         // }
 
-        let a = Math.floor(Math.random() * 7) + 1;
-        console.log(a);
+        // Calculate average score:
 
+        let math = +prompt("Enter scores of math");
+        let physics = +prompt("Enter physics scores");
+        let chemistry = +prompt("Enter chemistry scores");
+        let average = (math + physics + chemistry)/3;
+        alert ("Average is " + average);
+        
     
     </script>
 </body>
