@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- <table>
@@ -13,6 +14,32 @@
         <p id="result">Result:</p>
     </table> -->
 
+    <table id="both">
+        <tr>
+            <td>
+                Enter USD: 
+            </td>
+            <td>
+                <input type="text" id="input"></input>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Please Press button:
+            </td>
+            <td>
+                <button id="btn" onclick="convertCurrency();">CONVERT</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Display VND: 
+            </td>
+            <td>
+                <input type="text" id="display"></input>
+            </td>
+        </tr>
+    </table>
 
     <script>
         // Convert Degree C to Degree F:
@@ -38,14 +65,24 @@
         //     alert ('incorrect please try again');
         // }
 
-        // Calculate average score:
+        // Calculate average scores:
 
-        let math = +prompt("Enter scores of math");
-        let physics = +prompt("Enter physics scores");
-        let chemistry = +prompt("Enter chemistry scores");
-        let average = (math + physics + chemistry)/3;
-        alert ("Average is " + average);
+        // let math = parseFloat(prompt("Enter scores of math"));
+        // let physics = parseFloat(prompt("Enter physics scores"));
+        // let chemistry = parseFloat(prompt("Enter chemistry scores"));
+        // let average = (math + physics + chemistry)/3;
+        // alert ("Average is " + average);
         
+
+        // algorithm convert currency:
+
+        function convertCurrency() {
+            let input = document.getElementById('input').value;
+            let result = 23000 * input;
+            document.getElementById('display').value = result;
+        }
+
+
     
     </script>
 </body>
