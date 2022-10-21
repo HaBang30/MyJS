@@ -41,6 +41,7 @@
         </tr>
     </table>
 
+
     <script>
         // Convert Degree C to Degree F:
 
@@ -76,14 +77,24 @@
 
         // algorithm convert currency:
 
-        function convertCurrency() {
-            let input = document.getElementById('input').value;
-            let result = 23000 * input;
-            document.getElementById('display').value = result;
-        }
+        // function convertCurrency() {
+        //     let input = document.getElementById('input').value;
+        //     let result = 23000 * input;
+        //     document.getElementById('display').value = result;
+        // }
 
+        // Algorithm maximum value of 3 numbers:
 
-    
+        let a = parseFloat(prompt('Enter number a'));
+        let b = parseFloat(prompt('Enter number b'));
+        let c = parseFloat(prompt('Enter number c'));
+            if (a >= b && a >= c) {
+                alert ("Number a is maximum");
+            } else if (b >= a && b >= c) {
+                alert ("Number b is maximum");
+            } else {
+                alert ('Number c is maximum');
+            }
     </script>
 </body>
 </html>
